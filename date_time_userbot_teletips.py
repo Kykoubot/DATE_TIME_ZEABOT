@@ -8,7 +8,7 @@ from pyrogram import Client, filters
 from pyrogram.errors import FloodWait
 from lists_teletips.quotes_teletips import *
 from lists_teletips.emojis_teletips import *
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image2, ImageDraw, ImageFont
 import datetime
 import pytz
 import asyncio
@@ -32,7 +32,7 @@ async def main_teletips():
                 TimeZone_teletips = datetime.datetime.now(pytz.timezone(f"{Time_Zone}"))
                 Time_teletips = TimeZone_teletips.strftime("%I:%M %p")
                 Date_teletips = TimeZone_teletips.strftime("%b %d") 
-                Image_teletips = Image.open("image.jpg")
+                Image_teletips = Image.open("image2.jpg")
                 Image_font_teletips = ImageFont.truetype("ds-digit.ttf", 360)
                 Image_text_teletips = f"{Time_teletips}"
                 Image_edit_teletips = ImageDraw.Draw(Image_teletips)
